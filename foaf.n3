@@ -1,0 +1,23 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#matbaj> a foaf:Person ;
+    foaf:family_name "Bajorski" ;
+    foaf:favorite_fruit "Apple" ;
+    foaf:givenname "Mateusz" ;
+    foaf:knows [ a foaf:Person ;
+            foaf:mbox_sha1sum "9502d3e65ac3fca6f6f0bc701d7d84124cd95b4c" ;
+            foaf:name "Maciej Owczarczak" ] ;
+    foaf:mbox_sha1sum "21c946767774689c29ecaeadccc4140625f2b608" ;
+    foaf:name "Mateusz Bajorski" ;
+    foaf:title "Mr" .
+
+foaf:favoritefruit a rdf:Property,
+        <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "favorite_fruit" ;
+    rdfs:comment "Favorite Fruit of the person." ;
+    rdfs:domain foaf: ;
+    rdfs:range xsd:string .
