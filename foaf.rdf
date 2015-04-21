@@ -1,0 +1,26 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+	<rdf:Property rdf:about="http://xmlns.com/foaf/0.1/favoritefruit" rdfs:label="favorite_fruit" 
+	  rdfs:comment="Favorite Fruit of the person.">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</rdf:Property>
+	<foaf:Person rdf:about="#matbaj">
+		<foaf:name>Mateusz Bajorski</foaf:name>
+		<foaf:title>Mr</foaf:title>
+		<foaf:givenname>Mateusz</foaf:givenname>
+		<foaf:family_name>Bajorski</foaf:family_name>
+		<foaf:favorite_fruit>Apple</foaf:favorite_fruit>
+		<!-- mateusz.bajorski@host.com -->
+		<foaf:mbox_sha1sum>21c946767774689c29ecaeadccc4140625f2b608</foaf:mbox_sha1sum>
+		<foaf:knows rdf:nodeID="maciej-owczarczak" />
+	</foaf:Person>
+	<foaf:Person rdf:nodeID="maciej-owczarczak">
+		<foaf:name>Maciej Owczarczak</foaf:name>
+		<!-- maciej.owczarczak@host.com -->
+		<foaf:mbox_sha1sum>9502d3e65ac3fca6f6f0bc701d7d84124cd95b4c</foaf:mbox_sha1sum>
+	</foaf:Person>
+</rdf:RDF>
